@@ -1,0 +1,105 @@
+@font-face{
+    font-family: digital;
+    src: url(/digital-7.ttf);
+}
+
+:root{
+    --black:hsl(0, 0%, 9%);
+    --black-light:hsl(0, 0%, 13%);
+    --black-lighter:hsl(0, 0%, 20%);
+    --red:hsl(0, 71%, 53%);
+    --red-light:hsl(0, 71%, 63%);
+    --red-ligter:hsl(0, 71%, 73%);
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-primary: 'Roboto', sans-serif;
+    --dark-blue:#102a42;
+    --light-grey:#f1f5f8;
+    --medium-grey:#ebf7ff;
+    --dark-grey:#dae2ec;
+    --transition: all 0.3s linear;
+    --spacing : 4px;
+    --border-radius:8px;
+    --shadow:0 5px 15px rgba(0,0,0,0.2);
+    --medium-blue:#617d98;
+    --link-blue:#49a6e9;
+}
+*,
+::after,
+::before{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--black);
+    color: wheat;
+    font-family: digital;
+    line-height: 1.5;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3rem;
+    width: 95vw;
+    margin: 5rem auto;
+}
+.image-container{
+    width: 100%;
+    height: 100%;
+}
+.image{
+    border-radius: var(--border-radius);
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+}
+.center{
+    border-radius: var(--border-radius);
+}
+.center h2{
+    color:var(--red-light);
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+.giveaway{
+    color: white;
+    margin-bottom: 12px;
+    letter-spacing: var(--spacing);
+}
+.center p{
+    font-family: var(--font-secondary);
+    color: var(--red-ligter);
+    margin: 1rem 0;
+}
+.deadline{
+    display: flex;
+    justify-content: space-between;
+}
+.deadline-format{
+    background-color: var(--red);
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.deadline-format h4{
+    font-size: 2rem;
+    letter-spacing: var(--spacing);
+    text-align: center;
+}
+spam{
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: var(--spacing);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+
