@@ -128,7 +128,7 @@ span{
         width: 80vw;
     }
     .deadline{
-        align-content: center;
+        justify-content: center;
     }
 }
 
