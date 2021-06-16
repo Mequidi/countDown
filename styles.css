@@ -108,5 +108,18 @@ span{
     margin-bottom: 8px;
     text-align: center;
 }
-
+@media(max-width:1000px)
+{
+    .section{
+        grid-template-columns: auto;
+        margin: 0;
+        grid-template-rows: auto auto;
+        padding: 2rem;
+        justify-content: center;
+    }
+    .image{
+        height:auto;
+        width: 80vw;
+    }
+}
 
