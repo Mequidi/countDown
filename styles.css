@@ -36,11 +36,9 @@ body{
     font-family: digital;
     line-height: 1.5;
 }
-
 .section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* place-items: center; */
     gap: 3rem;
     width: 95vw;
     margin: 5rem auto;
@@ -69,13 +67,11 @@ body{
     color: white;
     margin-bottom: 12px;
     letter-spacing: var(--spacing);
-    /* max-width: 90%; */
 }
 .center p{
     font-family: var(--font-secondary);
     color: var(--red-ligter);
     margin: 1rem 0;
-    /* max-width:80%; */
 }
 .deadline{
     display: flex;
@@ -95,9 +91,9 @@ body{
 .deadline-format:first-child{
     margin-left: 0;
 }
-.deadline-format:last-child{
+/* .deadline-format:last-child{
     margin-right: 0;
-}
+} */
 .deadline-format h4{
     font-size: 2rem;
     letter-spacing: var(--spacing);
@@ -113,22 +109,12 @@ span{
 }
 @media(max-width:1000px)
 {
-    body{
-        text-align: center;
-    }
     .section{
+        grid-template-rows: auto 1fr;
         grid-template-columns: auto;
-        margin: 0;
-        grid-template-rows: auto auto;
-        padding: 2rem;
-        justify-content: center;
+        margin:1rem auto;
     }
-    .image{
-        height:auto;
-        width: 80vw;
-    }
-    .deadline{
-        justify-content: center;
-    }
+    
+
 }
 
