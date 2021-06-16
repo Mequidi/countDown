@@ -124,5 +124,8 @@ span{
         height:auto;
         width: 80vw;
     }
+    .deadline{
+        align-content: center;
+    }
 }
 
