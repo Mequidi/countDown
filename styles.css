@@ -95,6 +95,9 @@ body{
 .deadline-format:first-child{
     margin-left: 0;
 }
+.deadline-format:last-child{
+    margin-right: 0;
+}
 .deadline-format h4{
     font-size: 2rem;
     letter-spacing: var(--spacing);
