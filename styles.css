@@ -110,6 +110,9 @@ span{
 }
 @media(max-width:1000px)
 {
+    body{
+        text-align: center;
+    }
     .section{
         grid-template-columns: auto;
         margin: 0;
