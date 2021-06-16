@@ -40,7 +40,7 @@ body{
 .section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    place-items: center;
+    /* place-items: center; */
     gap: 3rem;
     width: 95vw;
     margin: 5rem auto;
@@ -69,15 +69,17 @@ body{
     color: white;
     margin-bottom: 12px;
     letter-spacing: var(--spacing);
+    /* max-width: 90%; */
 }
 .center p{
     font-family: var(--font-secondary);
     color: var(--red-ligter);
     margin: 1rem 0;
+    /* max-width:80%; */
 }
 .deadline{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .deadline-format{
     background-color: var(--red);
@@ -87,13 +89,18 @@ body{
     display: grid;
     justify-content: center;
     align-content: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; 
+}
+.deadline-format:first-child{
+    margin-left: 0;
 }
 .deadline-format h4{
     font-size: 2rem;
     letter-spacing: var(--spacing);
     text-align: center;
 }
-spam{
+span{
     font-family: var(--font-primary);
     text-transform: uppercase;
     font-size: 13px;
